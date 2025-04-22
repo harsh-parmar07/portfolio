@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsh Parmar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Harsh Portfolio</h1>
+      <nav>
+        <ul id="navList">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger" onclick="toggleNav()">☰</div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero fade-in">
+    <div class="container">
+      <h2>Hello, I'm Harsh 👋</h2>
+      <p>A full-stack web developer who loves solving real-world problems.</p>
+      <a href="#projects" class="btn">See My Work</a>
+    </div>
+  </section>
+
+  <section id="about" class="fade-in">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate web developer with experience in both frontend and backend development.
+        I specialize in building full-stack applications using modern technologies and frameworks.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="fade-in">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div><strong>Frontend:</strong> HTML, CSS, JavaScript, Figma</div>
+        <div><strong>Backend:</strong> Node.js, PHP, ASP.NET Core</div>
+        <div><strong>Database:</strong> MySQL, MongoDB</div>
+        <div><strong>Tools:</strong> Git, GitHub, VS Code</div>
+        <div><strong>Frameworks:</strong> Express, React (basic), Bootstrap</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="fade-in">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="card">
+          <h3>HireMe – Freelance Marketplace</h3>
+          <p>A full-stack web platform to connect freelancers with clients. Built using MVC, includes job posting, messaging, and wallet system.</p>
+        </div>
+        <div class="card">
+          <h3>ArenaPro – Tournament CMS</h3>
+          <p>Gaming tournament management system with admin panel, match results, player stats, and authentication.</p>
+        </div>
+        <div class="card">
+          <h3>Local Explorer</h3>
+          <p>API-powered app combining weather updates and nearby points of interest with map-based navigation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="fade-in">
+    <div class="container">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li>
+          <span class="date">2024 – 2025</span>
+          <h3>Full Stack Developer Intern</h3>
+          <p>Built a Ration Distribution platform using RFID for tracking and reporting. Worked on frontend & backend development.</p>
+        </li>
+        <li>
+          <span class="date">2023 – 2024</span>
+          <h3>Academic Projects</h3>
+          <p>Created web apps such as ArenaPro (gaming CMS) and HireMe (freelance marketplace). Implemented CRUD features and dashboards.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="testimonials" class="fade-in">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="testimonial-box">
+        <p id="testimonialText">“Harsh is an incredibly fast learner and a great team player!”</p>
+        <p id="testimonialAuthor">— Project Supervisor</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="responseMsg"></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Harsh Parmar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
